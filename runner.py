@@ -56,8 +56,8 @@ if __name__ == '__main__':
     
     #------------ modify the below three lines for specific task --------------#
     data_path = "/path/to/your/dataset/XXXXX.csv"
-    target = "XXXXX"
-    task_type = "xxxxx"
+    target = "XXXXX"      # name of the target column
+    task_type = "xxxxx"   # either "classification" or "regression"
     #--------------------------------------------------------------------------#
     
     # pass any model object into run() function
