@@ -51,19 +51,21 @@ if __name__ == '__main__':
     """
     # will add command line argument input later
     parser = argparse.ArgumentParser(
-        description='Train a dataset using LightGBM model, and perform evaluation.'
+        description='Train a dataset using awesome model, and perform evaluation.'
     )
     
-    data_path = "/media/sf_Shared/datasets/classification/abalone.csv"
-    target = "Class"
-    task_type = "classification"
+    #------------ modify the below three lines for specific task --------------#
+    data_path = "/path/to/your/dataset/XXXXX.csv"
+    target = "XXXXX"
+    task_type = "xxxxx"
+    #--------------------------------------------------------------------------#
     
-    # pass selected model object into run() function
+    # pass any model object into run() function
     lgbm_obj = LightGBMEstimator()
     sgd_obj = SGDEstimator()
     xgb_obj = XGBEstimator()
     
-    evaluation_res = run(data_path, xgb_obj, target, task_type)
+    evaluation_res = run(data_path, sgd_obj, target, task_type)
     
     
     
