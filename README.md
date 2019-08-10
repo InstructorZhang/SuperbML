@@ -16,5 +16,6 @@ Required packages to install:
 How to run:
   - Prepare your own dataset in csv form.
   - Identify the target column and task type.
-  - Read the comments in file *run.py*
-  - In command line, navigate to this repository's directory, type *python3 run.py*
+  - Read the comments in file *runner.py*
+  - In command line, navigate to this repository's directory, type *python3 runner.py*
+
