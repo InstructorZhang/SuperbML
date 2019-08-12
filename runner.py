@@ -9,6 +9,7 @@ import pandas as pd
 from awesome_lightgbm import LightGBMEstimator
 from awesome_sgd import SGDEstimator
 from awesome_xgboost import XGBEstimator
+from classic_random_forest import RFEstimator
 import data_processor
 
 
@@ -58,14 +59,14 @@ if __name__ == '__main__':
     data_path = "/path/to/your/dataset/XXXXX.csv"
     target = "XXXXX"      # name of the target column
     task_type = "xxxxx"   # either "classification" or "regression"
-    #--------------------------------------------------------------------------#
+    #--------------------------------------------------------------------------#    
     
-    # pass any model object into run() function
+    # pass selected model object into run() function
     lgbm_obj = LightGBMEstimator()
     sgd_obj = SGDEstimator()
     xgb_obj = XGBEstimator()
+    rf_obj = RFEstimator()
     
     evaluation_res = run(data_path, sgd_obj, target, task_type)
-    
     
     
